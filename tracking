@@ -1,0 +1,12 @@
+__libc_start_main(0x401137, 1, 0x7fffca53e998, 0x401250 <unfinished ...>
+setvbuf(0x7f641e15a760, 0, 2, 0)                = 0
+signal(SIGALRM, 0x401118)                       = 0
+alarm(30)                                       = 0
+puts("/* Welcome! */\n1. Forge a sword."...)    = 141
+read(0, "1\n", 32)                              = 2
+atoi(0x7fffca53e880, 0x7fffca53e880, 32, 0x7f641e08b1d1) = 1
+malloc(32)                                      = 0x1b2f260
+printf("New sword is forged ^_^. sword i"..., 0) = 43
+puts("/* Welcome! */\n1. Forge a sword."...)    = 141
+read(0, "", 32)                                 = 0
++++ exited (status 255) +++
