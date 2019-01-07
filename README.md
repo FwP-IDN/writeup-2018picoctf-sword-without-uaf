@@ -94,7 +94,7 @@ So, the attack is based on 2 stages. Leaking and Attacking
 
 ## Leaking
 
-Simply just make sure that second malloc value is <padding 8 bytes><address of GOT> then we free and we malloc again and libc leaked
+Simply just make sure that second malloc value is \<padding 8 bytes\>\<address of GOT\> then we free and we malloc again and libc leaked
 
 ## Attacking
 Just like leaking but the value is of second malloc is <padding 8 bytes><pointer to string bin/sh><pointer to system>. Freed the chunk and malloc again. When we call equip, it will spawn system("/bin/sh") without even use command number 2 (syntesize)
