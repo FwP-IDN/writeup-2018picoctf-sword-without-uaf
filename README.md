@@ -1,5 +1,12 @@
 # Write Up 2018 PicoCTF : Sword
 
+
+- [source](https://github.com/FwP-IDN/writeup-2018picoctf-sword-without-uaf/blob/master/sword.c)
+- [binary](https://github.com/FwP-IDN/writeup-2018picoctf-sword-without-uaf/blob/master/sword)
+- [libc](https://github.com/FwP-IDN/writeup-2018picoctf-sword-without-uaf/blob/master/libc)
+- [solver](https://github.com/FwP-IDN/writeup-2018picoctf-sword-without-uaf/blob/master/script1.py)
+
+
 So, I am in a holiday and try to solve this, and the flag is `picoCTF{usE_aFt3R_fr3e_1s_aN_1ssu3_XXXXXXXX}` so that means that the intended is using use after free. But I solve it without use after free and just using the first fist behaviour. Not important right? Yes.
 
 First thing to do is look in the source in sword.c. There is a hint in line 180. `/* Vuln. */`, they say. If we look deeper into the source, 
